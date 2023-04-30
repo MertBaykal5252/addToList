@@ -1,0 +1,574 @@
+:root {
+  --main-color: #5770EA;
+  --dark-blue: #234A90;
+  --light-blue: #0097D6;
+  --light-green: #17ADA1;
+  --error-color: #EA5757;
+  --main-title-size: 48px;
+  --main-content-text-size: 24px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #F7F7F7;
+  counter-reset: section;
+}
+
+.container {
+  padding: 0px 4px;
+  max-width: 1264px;
+  margin: auto;
+}
+
+.main-banner {
+  position: relative;
+}
+.main-banner__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-banner__wrapper {
+  position: relative;
+}
+.main-banner__logo {
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.main-banner__content {
+  text-align: center;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 302px;
+  width: 100%;
+}
+
+.main-title {
+  font-size: var(--main-title-size);
+  font-weight: bold;
+  text-align: center;
+}
+.main-title.-thin {
+  font-weight: 400;
+  margin: 0;
+}
+
+.main-fairmarkets {
+  margin: auto;
+}
+.main-fairmarkets h1 {
+  margin: 0;
+}
+.main-fairmarkets__items {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+.main-fairmarkets__items .main-fairmarkets__item:nth-child(1) {
+  background-color: var(--main-color);
+}
+.main-fairmarkets__items .main-fairmarkets__item:nth-child(2) {
+  background-color: var(--light-blue);
+}
+.main-fairmarkets__items .main-fairmarkets__item:nth-child(3) {
+  background-color: var(--light-green);
+}
+.main-fairmarkets__item {
+  flex: 1;
+  border-radius: 8px;
+  padding: 16px 0px 16px 26px;
+  color: white;
+  height: 300px;
+}
+.main-fairmarkets__item-title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.main-fairmarkets__item-title h1 {
+  font-size: 36px;
+  margin: 0;
+}
+.main-fairmarkets__item-title img {
+  position: absolute;
+  right: 26px;
+  bottom: 28px;
+}
+.main-fairmarkets__item-content p {
+  font-size: var(--main-content-text-size);
+  font-weight: 400;
+  max-width: 288px;
+}
+
+.main-trading-platforms h1.main-title {
+  margin-top: 97px;
+}
+.main-trading-platforms__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.main-trading-platforms__item {
+  flex: 1;
+  background: #FFDD5C;
+  border-radius: 8px;
+  padding: 36px;
+  position: relative;
+  height: 560px;
+}
+.main-trading-platforms__item h1 {
+  margin-top: 0;
+}
+.main-trading-platforms__item-content p {
+  font-size: var(--main-content-text-size);
+  font-weight: 400;
+}
+.main-trading-platforms__item-number {
+  font-size: 220px;
+  color: white;
+  opacity: 0.62;
+  font-weight: bold;
+  position: absolute;
+  bottom: -88px;
+  left: -14px;
+}
+.main-trading-platforms__item-number.mt4 {
+  right: -9px;
+  left: auto;
+}
+.main-trading-platforms__item-image {
+  position: absolute;
+  right: -176px;
+  top: 45px;
+}
+.main-trading-platforms__item-image.mt4 {
+  left: -133px;
+  bottom: -146px;
+  top: auto;
+}
+
+.main-cards {
+  margin-top: 70px;
+}
+.main-cards__items {
+  display: flex;
+  gap: 36px;
+}
+.main-cards__item {
+  flex: 1;
+  background: var(--dark-blue);
+  border-radius: 8px;
+  padding: 46px 45px 26px 26px;
+}
+.main-cards__item-icon {
+  text-align: right;
+}
+.main-cards__item-title h1 {
+  margin-top: 46px;
+  margin-bottom: 8px;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+.main-cards__item-content p {
+  font-size: var(--main-content-text-size);
+  font-weight: 400;
+  color: white;
+  max-width: 288px;
+}
+
+.main-awards {
+  background: white;
+  height: 1070px;
+}
+.main-awards__wrapper h1 {
+  padding-top: 54px;
+}
+.main-awards__items {
+  display: flex;
+  gap: 87px;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/awards-bg.png);
+  background-position: center;
+  height: 660px;
+}
+.main-awards .main__button {
+  margin-bottom: 20px;
+}
+
+.main-footer {
+  background: #2A2B23;
+}
+.main-footer__wrapper {
+  padding: 182px 0px 70px 0px;
+}
+.main-footer__wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+.main-footer__wrapper p {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+.main-footer__item.-bottom {
+  margin-top: 90px;
+}
+
+.main__button {
+  text-align: center;
+  background-color: var(--main-color);
+  border-radius: 4px;
+  padding: 12px 35px;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 80px;
+}
+.main__button a {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.main-form {
+  position: relative;
+  bottom: 160px;
+}
+.main-form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 32px 32px;
+  border-right: 1px solid #DADDDE;
+}
+.main-form__inputs h1 {
+  color: var(--main-color);
+  font-size: 36px;
+  margin-bottom: 28px;
+  margin-top: 32px;
+  text-align: center;
+}
+.main-form__wrapper {
+  display: flex;
+  border: 1px solid #DADDDE;
+  border-radius: 8px;
+  background-color: white;
+  opacity: 0.9;
+}
+.main-form .addListForm {
+  display: flex;
+  flex-direction: column;
+}
+.main-form .addListForm input {
+  margin-bottom: 10px;
+  padding: 12px 0px 13px 16px;
+  border-radius: 4px;
+  border: 1px solid #C8CBCC;
+  width: 300px;
+  outline: none;
+}
+.main-form .addListForm input::placeholder {
+  font-size: 16px;
+}
+.main-form .addListForm input.error {
+  border-color: var(--error-color);
+}
+.main-form .addListForm .error {
+  color: var(--error-color);
+  font-size: 10px;
+  margin-bottom: 9px;
+}
+.main-form .addListForm button {
+  padding: 12px 10px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main-form .addListForm button:hover {
+  background-color: var(--light-green);
+}
+
+.main-form__list {
+  width: 100%;
+  padding: 0 32px;
+  height: 435px;
+  overflow-y: scroll;
+}
+.main-form__list::-webkit-scrollbar {
+  display: none;
+}
+.main-form__list table {
+  margin-top: 46px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.main-form__list th {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+}
+.main-form__list td {
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid #DADDDE;
+  font-size: 16px;
+  color: #989898;
+}
+.main-form__list tr > td:first-child {
+  color: #000;
+}
+.main-form__list tr > td:first-child::before {
+  counter-increment: section;
+  content: counter(section);
+}
+.main-form__list .deleteButton {
+  background: transparent;
+  border: none;
+  color: var(--error-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1650px) {
+  .main-banner__content {
+    top: 140px;
+  }
+  .main-trading-platforms__item-image img {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main-form {
+    bottom: 100px;
+  }
+  .main-trading-platforms__item {
+    height: auto;
+  }
+  .main-trading-platforms__item-image {
+    position: static;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main-form {
+    bottom: 25px;
+  }
+  .main-trading-platforms__item-image {
+    text-align: right;
+  }
+  .main-trading-platforms__item-image.mt4 {
+    text-align: left;
+  }
+  .main-trading-platforms__item-image img {
+    width: 30%;
+  }
+  .main-trading-platforms__item-number {
+    opacity: 0.9;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-fairmarkets__items {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .main-fairmarkets__item-title h1 {
+    font-size: 24px;
+  }
+  .main-fairmarkets__item-title img {
+    bottom: -15px;
+  }
+  .main-fairmarkets__item-content p {
+    font-size: 18px;
+  }
+  .main-banner__content {
+    top: 65px;
+  }
+  .main-trading-platforms__item-number {
+    bottom: -22px;
+    left: -4px;
+    font-size: 55px;
+  }
+  .main-trading-platforms__item-number.mt4 {
+    right: -2px;
+    left: auto;
+  }
+  .main-trading-platforms__item-image {
+    display: none;
+  }
+  .main-cards__items {
+    flex-direction: column;
+  }
+  .main-cards__item-content p {
+    font-size: 18px;
+  }
+  .main-cards__item-title h1 {
+    font-size: 24px;
+  }
+  .main-awards {
+    height: 660px;
+  }
+  .main-awards__items {
+    justify-content: flex-start;
+    height: 450px;
+  }
+  .main-awards__item {
+    text-align: center;
+  }
+  .main-awards__item img {
+    width: 70%;
+  }
+  .main-awards .main__button {
+    margin-top: 30px;
+  }
+  .main-awards .main-title {
+    font-size: 24px;
+  }
+  .main-trading-platforms__item-content p {
+    font-size: 18px;
+  }
+  .main-trading-platforms__item-content h1 {
+    font-size: 24px;
+  }
+  .main-footer__wrapper {
+    padding: 50px 10px 50px 10px;
+  }
+  .main-footer__item.-bottom {
+    margin-top: 50px;
+  }
+  .main-form {
+    position: static;
+    margin-bottom: 50px;
+  }
+  .main-form input {
+    width: auto !important;
+  }
+  .main-form__wrapper {
+    flex-direction: column;
+  }
+  .main-form__list {
+    padding: 0;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-form__list td {
+    font-size: 11px;
+    padding: 2px;
+  }
+  .main-form__list th {
+    font-size: 12px;
+    padding: 2px;
+  }
+  .main-form__list .deleteButton {
+    font-size: 11px;
+  }
+  .main-form__inputs {
+    padding: 0px 8px 0px;
+  }
+  .main-form__inputs h1 {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+  .main-form .addListForm button {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  .main-form__wrapper {
+    position: relative;
+    opacity: 1;
+  }
+  .main-form input {
+    padding: 8px 0px 8px 8px;
+  }
+  .main-title {
+    font-size: 16px;
+  }
+  .main-banner__logo {
+    top: 16px;
+  }
+  .main-fairmarkets__items {
+    margin-top: 30px;
+  }
+  .main-fairmarkets__item-title h1 {
+    font-size: 16px;
+  }
+  .main-fairmarkets__item-content p {
+    font-size: 14px;
+  }
+  .main-trading-platforms h1 {
+    margin-top: 50px;
+  }
+  .main-trading-platforms__wrapper {
+    flex-direction: column;
+  }
+  .main-trading-platforms__item-content h1 {
+    font-size: 16px;
+  }
+  .main-trading-platforms__item-content p {
+    font-size: 14px;
+  }
+  .main-cards__item {
+    padding: 24px;
+  }
+  .main-cards__item-title h1 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .main-cards__item-content p {
+    font-size: 14px;
+  }
+  .main__button {
+    margin-top: 45px;
+  }
+  .main__button a {
+    font-size: 14px;
+  }
+  .main-awards {
+    height: 1000px;
+  }
+  .main-awards__items {
+    height: 780px;
+  }
+  .main-awards__items {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main-banner__content {
+    top: 35px;
+  }
+  .main-form__list th {
+    font-size: 10px;
+  }
+  .main-form__list td {
+    font-size: 10px;
+  }
+  .main-form .addListForm input {
+    margin-bottom: 5px;
+  }
+  .main-form .addListForm input::placeholder {
+    font-size: 10px;
+  }
+}

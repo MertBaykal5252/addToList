@@ -1,0 +1,353 @@
+@media screen and (max-width:1650px) {
+    .main-banner__content {
+        top: 140px;
+    }
+
+    .main-trading-platforms__item-image img {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .main-form {
+        bottom: 100px;
+    }
+
+    .main-trading-platforms__item {
+        height: auto;
+
+        &-image {
+            position: static;
+        }
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+    .main-form {
+        bottom: 25px;
+    }
+
+    .main-trading-platforms__item {
+        &-image {
+            text-align: right;
+
+            &.mt4 {
+                text-align: left;
+            }
+
+            img {
+                width: 30%;
+            }
+        }
+
+        &-number {
+            opacity: 0.9;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .main-title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-fairmarkets {
+        &__items {
+            flex-direction: column;
+            gap: 70px;
+        }
+
+        &__item {
+            &-title {
+                h1 {
+                    font-size: 24px;
+                }
+
+                img {
+                    bottom: -15px;
+                }
+            }
+
+            &-content {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+
+    .main-banner__content {
+        top: 65px;
+    }
+
+    .main-trading-platforms {
+        &__item {
+            &-number {
+                bottom: -22px;
+                left: -4px;
+                font-size: 55px;
+
+                &.mt4 {
+                    right: -2px;
+                    left: auto;
+                }
+            }
+
+            &-image {
+                display: none;
+            }
+        }
+    }
+
+    .main-cards {
+        &__items {
+            flex-direction: column;
+        }
+
+        &__item {
+            &-content {
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            &-title {
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .main-awards {
+        height: 660px;
+
+        &__items {
+            justify-content: flex-start;
+            height: 450px;
+        }
+
+        &__item {
+            text-align: center;
+
+            img {
+                width: 70%;
+
+            }
+        }
+
+        .main__button {
+            margin-top: 30px;
+        }
+
+        .main-title {
+            font-size: 24px;
+        }
+
+    }
+
+    .main-trading-platforms__item-content {
+        p {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+    }
+
+    .main-footer__wrapper {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .main-footer__item.-bottom {
+        margin-top: 50px;
+    }
+
+    .main-form {
+        position: static;
+        margin-bottom: 50px;
+
+        input {
+            width: auto !important;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__list {
+            padding: 0;
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .main-form {
+        &__list {
+            td {
+                font-size: 11px;
+                padding: 2px;
+            }
+
+            th {
+                font-size: 12px;
+                padding: 2px;
+            }
+
+            .deleteButton {
+                font-size: 11px;
+            }
+        }
+
+        &__inputs {
+            padding: 0px 8px 0px;
+
+            h1 {
+                font-size: 16px;
+                margin: 16px 0;
+            }
+        }
+
+        .addListForm {
+            button {
+                padding: 8px 4px;
+                font-size: 12px;
+            }
+        }
+
+        &__wrapper {
+            position: relative;
+            opacity: 1;
+        }
+
+        input {
+            padding: 8px 0px 8px 8px;
+        }
+    }
+
+    .main-title {
+        font-size: 16px;
+    }
+
+    .main-banner__logo {
+        top: 16px;
+    }
+
+    .main-fairmarkets {
+        &__items {
+            margin-top: 30px;
+        }
+
+        &__item {
+            &-title {
+                h1 {
+                    font-size: 16px;
+                }
+            }
+
+            &-content {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+
+    .main-trading-platforms {
+        h1 {
+            margin-top: 50px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__item {
+            &-content {
+                h1 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .main-cards {
+        &__item {
+            padding: 24px;
+
+            &-title {
+                h1 {
+                    font-size: 16px;
+                    margin-top: 0;
+                }
+            }
+
+            &-content {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .main__button {
+        margin-top: 45px;
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    .main-awards {
+        height: 1000px; 
+        &__items {
+            height: 780px;
+        }
+    }
+
+    .main-awards__items {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .main-banner {
+        &__content {
+            top: 35px;
+        }
+    }
+
+    .main-form {
+        &__list {
+            th {
+                font-size: 10px;
+            }
+
+            td {
+                font-size: 10px;
+            }
+        }
+
+        .addListForm {
+            input {
+                margin-bottom: 5px;
+
+                &::placeholder {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

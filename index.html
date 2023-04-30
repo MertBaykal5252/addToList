@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bundle.css">
+    <title>Trive</title>
+</head>
+
+<body>
+
+    <div class="main-banner">
+        <div class="main-banner__wrapper">
+            <div class="main-banner__image">
+                <img src="assets/images/banner.jpg" alt="Spreads starting from 0.1">
+            </div>
+
+            <div class="main-banner__items">
+                <div class="main-banner__logo">
+                    <img src="assets/images/logo.png" alt="Fair Markets" />
+                </div>
+
+                <div class="main-banner__content">
+                    <h1 class="main-title">Unleash the power of trading Gold CFDs Today</h1>
+                    <h1 class="main-title -thin">Spreads starting from 0.1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-form container">
+        <div class="main-form__wrapper">
+            <div class="main-form__inputs">
+                <h1>Account List</h1>
+                <form class="addListForm" method="POST" novalidate>
+                    <input type="text" name="name" class="form-input" placeholder="Name">
+                    <span id="nameError" class="error"></span>
+                    <input type="text" name="surname" class="form-input" placeholder="Surname">
+                    <span id="surNameError" class="error"></span>
+                    <input type="email" name="email" class="form-input" placeholder="Email">
+                    <span id="emailError" class="error"></span>
+                    <input type="text" name="phone" class="form-input" name="phone" required
+                        placeholder="(05__ ___ __ __)">
+                    <span id="phoneError" class="error"></span>
+                    <button>Add List</button>
+                </form>
+            </div>
+
+            <div class="main-form__list">
+                <table id="listTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-fairmarkets container">
+        <div class="main-fairmarkets__title">
+            <h1 class="main-title">Why FairMarkets</h1>
+        </div>
+
+        <div class="main-fairmarkets__items">
+            <div class="main-fairmarkets__item">
+                <div class="main-fairmarkets__item-title">
+                    <h1>Lowest<br>costs</h1>
+                    <img src="assets/images/icons/notebook-icon.png" alt="Notebook Icon">
+                </div>
+
+                <div class="main-fairmarkets__item-content">
+                    <p>Our transparent and low commissions minimize costs to maximize returns</p>
+                </div>
+            </div>
+
+            <div class="main-fairmarkets__item">
+                <div class="main-fairmarkets__item-title">
+                    <h1>Instant<br>Execution</h1>
+                    <img src="assets/images/icons/storm-icon.png" alt="Storm Icon">
+                </div>
+
+                <div class="main-fairmarkets__item-content">
+                    <p>High Number of Executions in 0.02 seconds</p>
+                </div>
+            </div>
+
+            <div class="main-fairmarkets__item">
+                <div class="main-fairmarkets__item-title">
+                    <h1>Local<br>Support</h1>
+                    <img src="assets/images/icons/call-icon.png" alt="Call Icon">
+                </div>
+
+                <div class="main-fairmarkets__item-content">
+                    <p>24/5 expert customer support, available in 6 languages</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-trading-platforms container">
+        <h1 class="main-title">Trading Platforms & Tools</h1>
+        <div class="main-trading-platforms__wrapper">
+            <div class="main-trading-platforms__item">
+                <div class="main-trading-platforms__item-content">
+                    <h1>MetaTrader 4</h1>
+                    <p>MetaTrader 4 is a sophisticated trading application that provides you with a variety of tools and features to assist you in conducting analysis and customizing your trading experience.</p>
+                    <div class="main-trading-platforms__item-number mt4">
+                        MT4
+                    </div>
+                </div>
+                <div class="main-trading-platforms__item-image mt4">
+                    <img src="assets/images/phones/phone-1.png" alt="MT4 Phone">
+                </div>
+            </div>
+
+            <div class="main-trading-platforms__item">
+                <div class="main-trading-platforms__item-content">
+                    <h1>MetaTrader 5</h1>
+                    <p>MT5’s smooth user interface can be fully shaped to your taste so you can trade & analyze the way you want.</p>
+                    <div class="main-trading-platforms__item-number">
+                        MT5
+                    </div>
+                </div>
+                <div class="main-trading-platforms__item-image">
+                    <img src="assets/images/phones/phone-2.png" alt="MT5 Phone">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-cards container">
+        <div class="main-cards__wrapper">
+            <div class="main-cards__items">
+                <div class="main-cards__item">
+                    <div class="main-cards__item-icon">
+                        <img src="assets/images/icons/booster-icon.png" alt="Booster Icon">
+                    </div>
+    
+                    <div class="main-cards__item-title">
+                        <h1>MT4/MT5<br /> Booster</h1>
+                    </div>
+    
+                    <div class="main-cards__item-content">
+                        <p>Boost your platform with add-ons designed to enhance your trading experience!</p>
+                    </div>
+                </div>
+    
+                <div class="main-cards__item">
+                    <div class="main-cards__item-icon">
+                        <img src="assets/images/icons/lock-icon.png" alt="Lock Icon">
+                    </div>
+    
+                    <div class="main-cards__item-title">
+                        <h1>VPS - Virtual<br /> Private Server</h1>
+                    </div>
+    
+                    <div class="main-cards__item-content">
+                        <p>Secure & private platform to access your trades remotely; no downtime</p>
+                    </div>
+                </div>
+    
+                <div class="main-cards__item">
+                    <div class="main-cards__item-icon">
+                        <img src="assets/images/icons/central-icon.png" alt="Central Icon">
+                    </div>
+    
+                    <div class="main-cards__item-title">
+                        <h1>Trading<br> Central</h1>
+                    </div>
+    
+                    <div class="main-cards__item-content">
+                        <p>Unmatched research and analysis services for FairMarkets’ traders</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__button">
+                <a href="javascript:void(0)">Open Account</a>
+            </div>
+
+        </div>
+    </div> 
+
+    <div class="main-awards">
+        <div class="main-awards__wrapper">
+            <h1 class="main-title">Award Winning Broker</h1>
+
+            <div class="main-awards__items">
+                <div class="main-awards__item">
+                    <img src="assets/images/awards/FM-ODUL-1.png" alt="FM Awards 1">
+                </div>
+                <div class="main-awards__item">
+                    <img src="assets/images/awards/FM-ODUL-1-2.png" alt="FM Awards 2">
+                </div>
+            </div>
+
+            <div class="main__button">
+                <a href="javascript:void(0)">Open Account</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="main-footer__wrapper container">
+            <h2>RISK WARNING</h2>
+            <div class="main-footer__item">
+                <p>Fairmarkets International Ltd., which is subject to ownership and control of Trive Investment B.V. , holds an Investment Dealer (Full Service Dealer, excluding Underwriting) Licence with licence number GB21026295 pursuant to section 29 of the Securities Act 2005, Rule 4 of the Securities Rules 2007, and the Financial Services Rules 2008. Fairmarkets International Ltd. is authorized and regulated by the Mauritius Financial Services Commission (FSC) and holds Global Business Licence number GB21026295 under Section 72(6) of the Financial Services Act. FairMarkets is a trademark of Fairmarkets International Ltd.</p>
+            </div>
+
+            <div class="main-footer__item -bottom">
+                <p>No services are offered to stateless persons, persons under the age of 18 years, persons and/or residents of sanctioned countries or any other jurisdiction where the distribution of leveraged instruments is prohibited, and citizens of any state or country where it may be against the law of that country to trade with a Mauritius and/or Australia based company and/or where the services are not made available by the Fairmarkets International Ltd. and/or Fairmarkets Trading Pty Ltd to hold an account with us. In any case, above all, it is your responsibility to avoid contravening any legislation in the country from where you are at the time.</p>
+                <p>RISK DISCLOSURE</p>
+                <p>CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. See our full Risk Disclosure and Terms of Business for further details.</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="assets/js/bundle.js"></script>
+</body>
+
+</html>
